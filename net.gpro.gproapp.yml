@@ -1,9 +1,9 @@
 app-id: net.gpro.gproapp
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: '24.08'
+base-version: '25.08'
 command: startgpro
 rename-icon: gpro
 separate-locales: false
@@ -23,12 +23,10 @@ modules:
     build-commands:
       - ar x gpro.deb
       - tar xf data.tar.xz -C /app --strip-components=2 ./opt ./usr
-      - install -Dm644 /app/GPRO/flatpak/net.gpro.gproapp.metainfo.xml /app/share/metainfo/net.gpro.gproapp.metainfo.xml
-      - install -Dm644 /app/GPRO/flatpak/net.gpro.gproapp.desktop /app/share/applications/net.gpro.gproapp.desktop
-      - install -Dm755 /app/GPRO/flatpak/startgpro /app/bin/startgpro
-     
+      - install -Dm644 /app/GPRO/flatpak/net.gpro.gproapp.metainfo.xml -t /app/share/metainfo/
+      - install -Dm644 /app/GPRO/flatpak/net.gpro.gproapp.desktop -t /app/share/applications/
+      - install -Dm755 /app/GPRO/flatpak/startgpro -t /app/bin/
       - rm /app/share/icons/hicolor/1024x1024/apps/gpro.png
-      
     sources:
       - type: file
         dest-filename: gpro.deb

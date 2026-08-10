@@ -30,13 +30,13 @@ modules:
     sources:
       - type: file
         dest-filename: gpro.deb
-        url: https://github.com/gpronet/gproapppub/releases/download/v1.0.190/GPRO_1.0.190_amd64.deb
-        sha256: a2766ff249bdfa6ce69d54d1ea2aeffdf0d5cd9a2032c7f8476c70042ca3c286
+        url: https://github.com/gpronet/gproapppub/releases/download/v1.0.192/GPRO_1.0.192_amd64.deb
+        sha256: 4cc4dbba9a0283b00f343767405c817d0f724a5ed1303409716b25453444f7ac
         only-arches:
           - x86_64
       - type: file
         dest-filename: gpro.deb
-        url: https://github.com/gpronet/gproapppub/releases/download/v1.0.190/GPRO_1.0.190_arm64.deb
-        sha256: efd37fa278cf2aa7e332dc93d23365f2bfa34709ef44e7cb9f09f9d746fa6870
+        url: https://github.com/gpronet/gproapppub/releases/download/v1.0.192/GPRO_1.0.192_arm64.deb        
+        sha256: 64e8be98535418518eb8964193f44483283de80413d9d7958fede74115a7f77e
         only-arches:
           - aarch64
